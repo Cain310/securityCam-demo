@@ -6,14 +6,14 @@
 ```
 {
     "Version": "2012-10-17",
-    "Id": "Policy1558729257125",
+    "Id": "YOUR-ID-HERE",
     "Statement": [
         {
             "Sid": "Stmt1558729184515",
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:*",
-            "Resource": "arn:aws:s3:::michaelcain-livestream"
+            "Resource": "arn:aws:s3:::"YOUR-BUCKET-NAME"
         }
     ]
 }
