@@ -1,6 +1,6 @@
 # securityCam-demo
 
-##### create an aws S3 bucket account and set up the permissions and the cors accordingly. Here a test example that I do not recomend as it gives anyone access. 
+##### create an aws S3 bucket account and set up the permissions and the CORS accordingly. Below is a test example that I do not recommend as it gives anyone access. 
 
 ### Bucket-Policy
 ```
