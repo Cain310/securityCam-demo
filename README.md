@@ -1,6 +1,10 @@
 # securityCam-demo
 
-##### create an aws S3 bucket account and set up the permissions and the CORS accordingly. Below is a test example that I do not recommend as it gives anyone access. 
+##### 1. Git Clone
+
+##### 2. Download and initialize amazon CLI
+
+##### 3. create an aws S3 bucket account and set up the permissions and the CORS accordingly. Below is a test example that I do not recommend as it gives anyone access. 
 
 ### Bucket-Policy
 ```
