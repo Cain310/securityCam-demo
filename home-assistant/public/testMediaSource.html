@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <div><video id="v1" height="500" width="500" controls="" muted="muted" autoplay=""></video></div>
+    
+
+    <script>
+      let video = document.getElementById("v1");
+      
+      let ms = new MediaSource();
+      video.src = window.URL.createObjectURL(ms);
+
+      var oReq = new XMLHttpRequest();
+      oReq.open("GET", "http://localhost:8080", true);
+      oReq.responseType = "arraybuffer";
+      oReq.send();
+      
+
+      oReq.onload = function(oEvent) {
+        var arrayBuffer = oReq.response; // Note: not oReq.responseText
+
+        console.log(24);
+
+        // ms.onsourceopen = function(e) {
+          console.log(27);
+          var mediaSourceBuffer = ms.addSourceBuffer('video/mp4; codecs="avc1.42E01E, mp4a.40.2"');
+          mediaSourceBuffer.appendBuffer(arrayBuffer);
+
+          // var playPromise = video.play();
+          // if (playPromise !== undefined) {
+          //   playPromise.then(_ => {
+          //     // .
+          //   })
+          //   .catch(error => {
+          //     console.log('doh.', error);
+          //   })
+          // }
+          // video.play().catch(function(error) {
+          //   console.log(error);
+          // });
+          
+        // };
+      }
+
+      
+
+
+
+      
+
+  // oReq.onload = function(oEvent) {
+  //   var arrayBuffer = oReq.response; // Note: not oReq.responseText
+  //   if (arrayBuffer) {
+  //     // var byteArray = new Uint8Array(arrayBuffer);
+  //     // for (var i = 0; i < byteArray.byteLength; i++) {
+  //     //   // do something with each byte in the array
+  //     // }
+  //     // console.log("44:", arrayBuffer);
+
+  //     const videoSourceBuffer = mediasource.addSourceBuffer(
+  //       'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'
+  //     );
+  //     // console.log(videoSourceBuffer);
+  //     videoSourceBuffer.appendBuffer(arrayBuffer);
+  //     ms.endOfStream()
+  //     const videoElement = document.getElementById("my-video");
+  //     videoElement.play()
+  //   }
+  // };
+    </script>
+  </body>
+</html>
