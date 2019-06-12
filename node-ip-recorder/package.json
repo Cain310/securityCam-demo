@@ -1,8 +1,8 @@
 {
-  "name": "node-rtsp-recorder",
+  "name": "node-ip-recorder",
   "version": "1.0.3",
-  "description": "RTSP Stream Recorder",
-  "main": "src/index.js",
+  "description": "IP camera, ffmpeg transcoding, aws S3 storage, mediasource buffering, and react UI. ",
+  "main": "record-test.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/eslint .",
@@ -10,12 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sahilchaddha/node-rtsp-recorder.git"
+    "url": "git+https://github.com/Cain310/securityCam-demo"
   },
-  "author": "Sahil Chaddha",
+  "author": "Michael Cain",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sahilchaddha/node-rtsp-recorder/issues"
+    "url": "https://github.com/Cain310/securityCam-demo"
   },
   "keywords": [
     "rtsp",
@@ -24,7 +24,7 @@
     "rtsp-stream",
     "ip-camera"
   ],
-  "homepage": "https://github.com/sahilchaddha/node-rtsp-recorder#readme",
+  "homepage": "https://github.com/Cain310/securityCam-demo/blob/master/README.md",
   "devDependencies": {
     "eslint": "^5.3.0",
     "eslint-config-airbnb-base": "^13.0.0",
